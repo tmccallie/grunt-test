@@ -38,10 +38,28 @@ module.exports = function(grunt) {
       all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
     },
     watch: {
-        trey: {
-            files: 'src/less/*.less',
-            tasks: ['recess']
-        }
+      recess: {
+          files: 'src/less/*.less',
+          tasks: ['recess']
+      },
+      css: {
+        files: 'dist/css/**/*.css',
+        tasks: ['jshint'],
+        options: {
+          livereload: true,
+        },
+      },
+    },
+    shell: {
+      bumpPatch: {
+        command: 'npm version patch'
+      },
+      bumpMinor: {
+        command: 'npm version minor'
+      },
+      bumpMajor: {
+        command: 'npm version major'
+      }
     }
   });
 
@@ -51,7 +69,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
+  grunt.loadNpmTasks('grunt-shell');
   
   // Default task(s).
   grunt.registerTask('default', ['clean','uglify','jshint','recess']);
