@@ -1,6 +1,22 @@
 <a name="v0.2.0"></a>
 ## v0.2.0 (2013-08-24)
 
+
+#### Features
+
+* **Something:** bumped the version ([16ef490a](https://github.com/tmccallie/grunt-test/commit/16ef490a3a16da16c02ecd568029f92315fe04d4))
+
+<a name="v0.2.0"></a>
+## v0.2.0 (2013-08-24)
+
+
+#### Features
+
+* **Something:** bumped the version ([16ef490a](https://github.com/tmccallie/grunt-test/commit/16ef490a3a16da16c02ecd568029f92315fe04d4))
+
+<a name="v0.2.0"></a>
+## v0.2.0 (2013-08-24)
+
 <a name="v0.1.0"></a>
 ## v0.1.0 (2013-08-24)
 
