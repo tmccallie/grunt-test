@@ -3,23 +3,35 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
+    concat: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        // separator: ';',
       },
-      build: {
-        files: {
-          'dist/js/<%= pkg.name %>.min.js': ['src/js/main.js', 'src/js/app.js']
-        }
-      }
+      dist: {
+        src: ['src/js/main.js', 'src/js/app.js'],
+        dest: 'dist/js/<%= pkg.name %>.js',
+      },
     },
+    // uglify: {
+    //   options: {
+    //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+    //   },
+    //   build: {
+    //     files: {
+    //       'dist/js/<%= pkg.name %>.min.js': ['src/js/main.js', 'src/js/app.js']
+    //     }
+    //   }
+    // },
     recess: {
         options: {
             compile: true
         },
         gruntsite: {
             files: {
-                'dist/css/<%= pkg.name %>.css': ['src/less/<%= pkg.name %>.less']
+                'dist/css/<%= pkg.name %>.css': [
+                  'lib/bootstrap/less/bootstrap.less',
+                  'src/less/<%= pkg.name %>.less']
+                // 'dist/css/bootstrap.css': ['lib/bootstrap/less/bootstrap.less']
             }
         },
         min: {
@@ -27,7 +39,11 @@ module.exports = function(grunt) {
                 compress: true
             },
             files: {
-                'dist/css/<%= pkg.name %>.min.css': ['src/less/<%= pkg.name %>.less']
+                'dist/css/<%= pkg.name %>.min.css': [
+                  'lib/bootstrap/less/bootstrap.less',
+                  'src/less/<%= pkg.name %>.less'
+                ]
+                // 'dist/css/bootstrap.min.css': ['lib/bootstrap/less/bootstrap.less']               
             }
         }
     },
@@ -39,16 +55,20 @@ module.exports = function(grunt) {
     },
     watch: {
       recess: {
-          files: 'src/less/*.less',
+          files: ['src/less/*.less','lib/bootstrap/less/*.less'],
           tasks: ['recess']
       },
       css: {
         files: 'dist/css/**/*.css',
-        tasks: ['jshint'],
+        // tasks: ['csslint:lax'],
         options: {
-          livereload: true,
+          // livereload: true,
         },
       },
+      js: {
+        files: 'src/js/**/*.js',
+        tasks: ['concat']
+      }
     },
     shell: {
       bumpPatch: {
@@ -60,19 +80,38 @@ module.exports = function(grunt) {
       bumpMajor: {
         command: 'npm version major'
       }
+    },
+    changelog: {},
+    csslint: {
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['dist/css/<%= pkg.name %>.css']
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['dist/css/<%= pkg.name %>.css']
+      }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-conventional-changelog');
+  // grunt.loadNpmTasks('grunt-devtools');
   
   // Default task(s).
-  grunt.registerTask('default', ['clean','uglify','jshint','recess']);
+  grunt.registerTask('default', ['clean','jshint','concat','recess','csslint:lax']);
 
   // grunt.registerTask('watch', ['watch']);
 
