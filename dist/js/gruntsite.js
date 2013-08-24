@@ -5,7 +5,7 @@ function TodoCtrl($scope) {
 
 	$scope.doSomething = function () {
 		$scope.bar = $scope.foo;
-	}
+	};
 
 }
 

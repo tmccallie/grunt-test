@@ -111,7 +111,7 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-devtools');
   
   // Default task(s).
-  grunt.registerTask('default', ['clean','jshint','concat','recess','csslint:lax']);
+  grunt.registerTask('default', ['clean','jshint','concat','recess','changelog']);
 
   // grunt.registerTask('watch', ['watch']);
 
