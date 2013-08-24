@@ -112,7 +112,7 @@ module.exports = function(grunt) {
   
   // Default task(s).
   grunt.registerTask('default', ['clean','jshint','concat','recess']);
-  grunt.registerTask('changelog', ['changelog']);
+  grunt.registerTask('logger', ['changelog']);
 
   // grunt.registerTask('watch', ['watch']);
 
