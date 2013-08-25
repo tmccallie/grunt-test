@@ -115,5 +115,4 @@ module.exports = function(grunt) {
   grunt.registerTask('commit', ['shell:bumpPatch','changelog']);
 
   // grunt.registerTask('watch', ['watch']);
-
 };
