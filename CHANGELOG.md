@@ -5,6 +5,15 @@
 #### Features
 
 * **Whatever:** Does this even work ([4d175660](https://github.com/tmccallie/grunt-test/commit/4d1756608c67f2e020d6c4ba3b3af6d7179f64f6))
+* **main.less:** update CSS ([a999fdac](https://github.com/tmccallie/grunt-test/commit/a999fdac4531192430c8cc3f14e8696656f77fb0))
+
+<a name="v0.3.7"></a>
+### v0.3.7 (2013-08-24)
+
+
+#### Features
+
+* **Whatever:** Does this even work ([4d175660](https://github.com/tmccallie/grunt-test/commit/4d1756608c67f2e020d6c4ba3b3af6d7179f64f6))
 
 <a name="v0.3.7"></a>
 ### v0.3.7 (2013-08-24)
