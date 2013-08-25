@@ -113,6 +113,4 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', ['clean','jshint','concat','recess']);
   grunt.registerTask('commit', ['shell:bumpPatch','changelog']);
-
-  // grunt.registerTask('watch', ['watch']);
 };
