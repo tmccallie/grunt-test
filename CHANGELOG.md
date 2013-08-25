@@ -1,6 +1,14 @@
 <a name="v0.3.9"></a>
 ### v0.3.9 (2013-08-24)
 
+
+#### Features
+
+* **Gruntfile:** add comment to test ([4d44a495](https://github.com/tmccallie/grunt-test/commit/4d44a4958a6711880369a76f8774efc0d9d8f1e5))
+
+<a name="v0.3.9"></a>
+### v0.3.9 (2013-08-24)
+
 <a name="v0.3.9"></a>
 ### v0.3.9 (2013-08-24)
 
