@@ -1,29 +1,71 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-		<link rel="stylesheet" href="dist/css/gruntsite.css">
-	</head>
-	<body>
-		<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+		<!-- <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"> -->
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- <link rel="stylesheet" href="dist/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="dist/css/gruntsite.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-app>
+
+		<div class="container" ng-controller="TodoCtrl">
 			<div class="row">
-				<div class="col-md-4">A</div>
-				<div class="col-md-4">
-					<form action="" class="trey">
-						<legend>Legend</legend>
-						<label for="">asdf</label>
-						<input type="text">
-						<button>Go</button>
+				<div class="col-2">A</div>
+				<div class="col-4">
+					<form ng-submit="doSomething()" class="trey">
+
+						<fieldset>
+							<legend>Legend</legend>
+							<label for="">asdf</label>
+							<input type="text" ng-model="foo" placeholder="blah">
+							<input class="btn-primary" type="submit" value="go">
+						</fieldset>
+					
 					</form>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8">.col-md-8</div>
-				<div class="col-md-4">.col-md-4</div>
+				<div class="col-2">{{bar}}</div>
+				<div class="col-4">.col-md-4</div>
 			</div>
 
 		</div>
 
-		<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="http://localhost:35729/livereload.js"></script>
-	</body>
+    <div class="container theme-showcase">
+
+      <div class="page-header">
+        <h1>Thumbnails</h1>
+      </div>
+      <img data-src="holder.js/200x200" src="data:image/png;base64," class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
+
+    </div> <!-- /container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/JavaScript" src="lib/bootstrap/assets/js/jquery.js"></script>
+    <script type="text/JavaScript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script type="text/JavaScript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/JavaScript" src="lib/bootstrap/assets/js/holder.js"></script>
+    <script type="text/JavaScript" src="dist/js/gruntsite.js"></script>
+
+  </body>
 </html>

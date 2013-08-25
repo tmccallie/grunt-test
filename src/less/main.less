@@ -4,7 +4,7 @@
 
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
-@alert-text: purple;
+@alert-text: #dfdfdf;
 @alert-bg: #f9f9f9;
 
 
@@ -17,12 +17,6 @@
   color: @alert-text;
   background-color: @alert-bg;
 
-  // Headings for larger alerts
-  h4 {
-    margin-top: 0;
-    // Specified for the h4 to prevent conflicts of changing @headingsColor
-    color: inherit;
-  }
   // Match the hr to the border of the alert
   // Provide class for links that match alerts
   .alert-link {
@@ -39,3 +33,10 @@
   }
 }
 
+// Headings for larger alerts
+h4 {
+  margin-top: 0;
+  // Specified for the h4 to prevent conflicts of changing @headingsColor
+  color: inherit;
+  font-size: 2em;
+}
