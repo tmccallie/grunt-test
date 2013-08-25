@@ -114,5 +114,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['clean','jshint','concat','recess']);
   grunt.registerTask('commit', ['shell:bumpPatch','changelog']);
 
-  //something
+  //something else
 };
