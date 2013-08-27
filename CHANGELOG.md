@@ -1,4 +1,22 @@
 <a name="v0.3.10"></a>
+### v0.3.10 (2013-08-26)
+
+
+#### Features
+
+* **Gruntfile:** add comment to test ([4d44a495](https://github.com/tmccallie/grunt-test/commit/4d44a4958a6711880369a76f8774efc0d9d8f1e5))
+* **Gruntfile.js:** test 5 ([086ba9a8](https://github.com/tmccallie/grunt-test/commit/086ba9a89176c95cbd65055356a2679f74d6685d))
+
+<a name="v0.3.10"></a>
+### v0.3.10 (2013-08-26)
+
+
+#### Features
+
+* **Gruntfile:** add comment to test ([4d44a495](https://github.com/tmccallie/grunt-test/commit/4d44a4958a6711880369a76f8774efc0d9d8f1e5))
+* **Gruntfile.js:** test 5 ([086ba9a8](https://github.com/tmccallie/grunt-test/commit/086ba9a89176c95cbd65055356a2679f74d6685d))
+
+<a name="v0.3.10"></a>
 ### v0.3.10 (2013-08-24)
 
 
