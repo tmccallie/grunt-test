@@ -1,6 +1,6 @@
 {
   "name": "gruntsite",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "My first Grunt managed site",
   "main": "index.htm",
   "scripts": {
