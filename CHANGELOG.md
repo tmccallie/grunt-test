@@ -1,6 +1,14 @@
 <a name="v0.3.14"></a>
 ### v0.3.14 (2013-08-30)
 
+
+#### Features
+
+* **calculator.htm:** yet another test ([0bb92c60](https://github.com/tmccallie/grunt-test/commit/0bb92c601cc265b9df1c82c2338050c0af81df0a))
+
+<a name="v0.3.14"></a>
+### v0.3.14 (2013-08-30)
+
 <a name="v0.3.14"></a>
 ### v0.3.14 (2013-08-30)
 
