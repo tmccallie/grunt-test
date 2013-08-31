@@ -1,6 +1,6 @@
 {
   "name": "gruntsite",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "My first Grunt managed site",
   "main": "index.htm",
   "scripts": {
@@ -28,6 +28,7 @@
     "grunt-contrib-watch": "~0.5.2",
     "grunt-shell": "~0.3.1",
     "grunt-contrib-csslint": "~0.1.2",
-    "grunt-conventional-changelog": "~1.0.0"
+    "grunt-conventional-changelog": "~1.0.0",
+    "grunt-push-release": "~0.1.1"
   }
 }

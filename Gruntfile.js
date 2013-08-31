@@ -43,7 +43,7 @@ module.exports = function(grunt) {
                   'lib/bootstrap/less/bootstrap.less',
                   'src/less/<%= pkg.name %>.less'
                 ]
-                // 'dist/css/bootstrap.min.css': ['lib/bootstrap/less/bootstrap.less']               
+                // 'dist/css/bootstrap.min.css': ['lib/bootstrap/less/bootstrap.less']
             }
         }
     },
@@ -95,7 +95,27 @@ module.exports = function(grunt) {
         },
         src: ['dist/css/<%= pkg.name %>.css']
       }
-    }
+    },
+		push: {
+		  options: {
+		    files: ['package.json'],
+		    updateConfigs: [],
+		    add: true,
+		    addFiles: ['.'], // '.' for all files except ingored files in .gitignore
+		    commit: true,
+		    commitMessage: 'Release v%VERSION%',
+		    // commitFiles: ['package.json'], // '-a' for all files
+		    commitFiles: ['-a'], // '-a' for all files
+		    createTag: true,
+		    tagName: 'v%VERSION%',
+		    tagMessage: 'Version %VERSION%',
+		    push: true,
+		    pushTo: 'origin',
+		    npm: false,
+		    npmTag: 'Release v%VERSION%',
+		    gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
+		  }
+		}
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -108,8 +128,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-conventional-changelog');
+  grunt.loadNpmTasks('grunt-push-release');
   // grunt.loadNpmTasks('grunt-devtools');
-  
+
   // Default task(s).
   grunt.registerTask('default', ['clean','jshint','concat','recess']);
   grunt.registerTask('commit', ['shell:bumpPatch','changelog']);
