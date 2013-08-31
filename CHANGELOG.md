@@ -1,3 +1,13 @@
+<a name="v0.3.18"></a>
+### v0.3.18 (2013-08-30)
+
+
+#### Features
+
+* **calculator.htm:**
+  * up to 10 ([50aa6508](https://github.com/tmccallie/grunt-test/commit/50aa650859313f211feab51524bb869cbf0b1174))
+  * up to 9 ([0cd95863](https://github.com/tmccallie/grunt-test/commit/0cd95863c02b61384f43c64614e57246589b4e91))
+
 <a name="v0.3.17"></a>
 ### v0.3.17 (2013-08-30)
 
