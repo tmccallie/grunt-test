@@ -1,4 +1,16 @@
 <a name="v0.3.18"></a>
+### v0.3.18 (2013-08-31)
+
+
+#### Features
+
+* **calculator.htm:**
+  * major BS3 formatting ([a779304a](https://github.com/tmccallie/grunt-test/commit/a779304ab4f7f23f33dd8923a8095d243b93d8cd))
+  * up to 11 ([43f02402](https://github.com/tmccallie/grunt-test/commit/43f024025fa0889191b876ddf52a12c5db0e90cc))
+  * up to 10 ([50aa6508](https://github.com/tmccallie/grunt-test/commit/50aa650859313f211feab51524bb869cbf0b1174))
+  * up to 9 ([0cd95863](https://github.com/tmccallie/grunt-test/commit/0cd95863c02b61384f43c64614e57246589b4e91))
+
+<a name="v0.3.18"></a>
 ### v0.3.18 (2013-08-30)
 
 
