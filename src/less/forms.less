@@ -17,14 +17,40 @@ legend {
   background-color: yellow;
 }
 
-xlabel {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
 .trey {
 	button {
 		color: @alert-text;
 	}
 }
+
+.btn-unit.dropdown-toggle {
+	background-color: transparent;
+	color: @form-accent;
+	text-decoration: underline;
+}
+
+.btn:hover,
+.dropdown-toggle:hover {
+	color: black;
+}
+
+.btn-unit:focus {
+	color:black;
+}
+
+.dropdown-menu>li {
+	a:hover{
+		color: black;
+	}
+	a:focus{
+		color: black;
+	}
+}
+
+.btn-unit {
+	.caret {
+		margin-left: 4px;
+		border-top-color: @form-accent;
+	}
+}
+
