@@ -13,7 +13,7 @@
 		<!-- <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"> -->
 <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
 		<!-- <link rel="stylesheet" href="dist/css/bootstrap.min.css"> -->
-		<link rel="stylesheet" href="dist/css/gruntsite.min.css">
+		<link rel="stylesheet" href="dist/css/gruntsite.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,74 +35,66 @@
 
   	      <form class="form-inline" role="form">
 
-  	              <div class="col-md-6">
-  	                <div class="form-group">
+	          <div class="form-group">
 
-  	                  <div class="col-sm-6">
-  			                <label for="">Distance</label>
+	            <div class="col-sm-6">
+	              <label for="">Distance</label>
 
-  	                    <div class="input-group">
-  	                      <div class="input-group-btn">
-  	                        <button type="button" class="btn btn-cancel dropdown-toggle" data-toggle="dropdown">Distance <span class="caret"></span></button>
-  	                        <ul id="distanceHelper" class="dropdown-menu pull-left" role="menu">
-  	                          <li><a href="#" data-unit="42000">marathon</a></li>
-  	                          <li><a href="#" data-unit="21000">half marathon</a></li>
-  	                          <li><a href="#" data-unit="10000">10K</a></li>
-  	                          <li class="divider"></li>
-  	                          <li><a href="#">Separated link</a></li>
-  	                        </ul>
-  	                      </div><!-- /btn-group -->
+	              <div class="input-group">
+	                <div class="input-group-btn">
+	                  <button type="button" class="btn btn-cancel dropdown-toggle" data-toggle="dropdown">Distance <span class="caret"></span></button>
+	                  <ul id="distanceHelper" class="dropdown-menu pull-left" role="menu">
+	                    <li><a href="#" data-unit="42000">marathon</a></li>
+	                    <li><a href="#" data-unit="21000">half marathon</a></li>
+	                    <li><a href="#" data-unit="10000">10K</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="#">Separated link</a></li>
+	                  </ul>
+	                </div><!-- /btn-group -->
 
-  	                      <input type="text" id="distance-unit" class="form-control">
+	                <input type="text" id="distance-unit" class="form-control">
 
-  	                      <div class="input-group-btn">
-  	                        <button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
-  	                        <ul class="dropdown-menu pull-right unit-select" role="menu">
-  	                          <li><a href="#" data-unit="mi">Mi</a></li>
-  	                          <li><a href="#" data-unit="km">Km</a></li>
-  	                          <li><a href="#" data-unit="m">m</a></li>
-  	                        </ul>
-	  		                    <input type="hidden" id="distanceUnit" class="hiddenUnit">
-  	                      </div><!-- /btn-group -->
+	                <div class="input-group-btn">
+	                  <button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
+	                  <ul class="dropdown-menu pull-right unit-select" role="menu">
+	                    <li><a href="#" data-unit="mi">Mi</a></li>
+	                    <li><a href="#" data-unit="km">Km</a></li>
+	                    <li><a href="#" data-unit="m">m</a></li>
+	                  </ul>
+	                  <input type="hidden" id="distanceUnit" class="hiddenUnit">
+	                </div><!-- /btn-group -->
 
-  	                    </div><!-- /input-group -->
-  	                  </div>
+	              </div><!-- /input-group -->
+	            </div>
 
-  	                </div>
+	          </div>
 
-  	              </div>
+	        	<div class="form-group col-sm-3">
+	        		<label for="">Time</label>
+							<input type="text" class="form-control" data-mask="99:99:99">
+	        	</div>
 
-  	              <div class="col-md-3">
-  	              	<div class="form-group col-sm-3">
-  	              		<label for="">Time</label>
-  										<input type="text" class="form-control" data-mask="99:99:99">
-  	              	</div>
-  	              </div>
+	        	<div class="form-group col-sm-3">
 
-  	              <div class="col-md-3">
+	        		<label for="">Pace</label>
 
-  	              	<div class="form-group col-sm-3">
+	            <div class="input-group">
 
-  	              		<label for="">Pace</label>
+								<input type="text" class="form-control" data-mask="99:99">
 
-  		                <div class="input-group">
+	              <div class="input-group-btn">
+	                <button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
+	                <ul class="dropdown-menu pull-right unit-select" role="menu">
+	                  <li><a href="#" data-unit="mi">Mi</a></li>
+	                  <li><a href="#" data-unit="km">Km</a></li>
+	                  <li><a href="#" data-unit="m">m</a></li>
+	                </ul>
+	                <input type="hidden" id="paceUnit" class="hiddenUnit">
+	              </div><!-- /btn-group -->
 
-  											<input type="text" class="form-control" data-mask="99:99">
+	            </div><!-- /input-group -->
+						</div>
 
-  		                  <div class="input-group-btn">
-  		                    <button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
-  		                    <ul class="dropdown-menu pull-right unit-select" role="menu">
-  		                      <li><a href="#" data-unit="mi">Mi</a></li>
-  		                      <li><a href="#" data-unit="km">Km</a></li>
-  		                      <li><a href="#" data-unit="m">m</a></li>
-  		                    </ul>
-  		                    <input type="hidden" id="paceUnit" class="hiddenUnit">
-  		                  </div><!-- /btn-group -->
-
-  		                </div><!-- /input-group -->
-  									</div>
-
-  	              </div>
   	      </form>
     	    </div>
 

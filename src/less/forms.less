@@ -25,11 +25,10 @@ legend {
 
 .btn-unit.dropdown-toggle {
 	background-color: transparent;
-	color: @form-accent;
+	color: @form-accent-bright;
 	text-decoration: underline;
 }
 
-.btn:hover,
 .dropdown-toggle:hover {
 	color: black;
 }
@@ -38,19 +37,27 @@ legend {
 	color:black;
 }
 
-.dropdown-menu>li {
-	a:hover{
-		color: black;
-	}
-	a:focus{
-		color: black;
+.dropdown-menu {
+	> li {
+		a{
+			&:hover {
+				color: black;
+				background-color: @form-accent-light;
+				background-image: none;
+			}
+			&:focus{
+				color: black;
+				background-color: @form-accent-light;
+				background-image: none;
+			}
+		}
 	}
 }
 
 .btn-unit {
 	.caret {
 		margin-left: 4px;
-		border-top-color: @form-accent;
+		border-top-color: @form-accent-bright;
 	}
 }
 
