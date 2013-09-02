@@ -4,6 +4,17 @@
 
 #### Features
 
+* **calculator:**
+  * Added panel and well and theme location change ([9b69176a](https://github.com/tmccallie/grunt-test/commit/9b69176a904fc58abc158e8e15be4f31a76d9a89))
+  * more cool formatting ([4ace198d](https://github.com/tmccallie/grunt-test/commit/4ace198db9c6559f248b6db373611fc8a5c80112))
+* **calculator.htm:** Added components ([c78481b7](https://github.com/tmccallie/grunt-test/commit/c78481b7b1ca3df3c4436d7f381db7bdd293d836))
+
+<a name="v0.3.19"></a>
+### v0.3.19 (2013-09-02)
+
+
+#### Features
+
 * **calculator:** more cool formatting ([4ace198d](https://github.com/tmccallie/grunt-test/commit/4ace198db9c6559f248b6db373611fc8a5c80112))
 * **calculator.htm:** Added components ([c78481b7](https://github.com/tmccallie/grunt-test/commit/c78481b7b1ca3df3c4436d7f381db7bdd293d836))
 
