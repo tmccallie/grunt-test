@@ -1,3 +1,11 @@
+<a name="v0.3.20"></a>
+### v0.3.20 (2013-09-02)
+
+
+#### Features
+
+* **Gruntfile:** Pulled theme.less out of BS3 structure ([ef762853](https://github.com/tmccallie/grunt-test/commit/ef7628530d7ce057fc01be0c054b9ff2dcec1fb3))
+
 <a name="v0.3.19"></a>
 ### v0.3.19 (2013-09-02)
 
