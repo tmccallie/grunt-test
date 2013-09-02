@@ -6886,6 +6886,24 @@ h4 {
   color: inherit;
 }
 
+@media (min-width: 768px) {
+  .btn-unit {
+    padding-left: 4px;
+  }
+  .form-control {
+    padding: 6px 2px;
+    text-align: right;
+  }
+}
+
+#advanced {
+  margin-top: 20px;
+}
+
+#advanced + .row {
+  margin-top: 20px;
+}
+
 fieldset {
   padding: 20px;
   margin: 8px;
