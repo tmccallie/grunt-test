@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         gruntsite: {
             files: {
                 'dist/css/<%= pkg.name %>.css': [
-                  'lib/bootstrap/less/bootstrap.less',
+                  // 'lib/bootstrap/less/bootstrap.less',
                   'src/less/<%= pkg.name %>.less']
                 // 'dist/css/bootstrap.css': ['lib/bootstrap/less/bootstrap.less']
             }
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             },
             files: {
                 'dist/css/<%= pkg.name %>.min.css': [
-                  'lib/bootstrap/less/bootstrap.less',
+                  // 'lib/bootstrap/less/bootstrap.less',
                   'src/less/<%= pkg.name %>.less'
                 ]
                 // 'dist/css/bootstrap.min.css': ['lib/bootstrap/less/bootstrap.less']
