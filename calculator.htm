@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Grid Template for Bootstrap</title>
+    <title>Run SMART Calculator</title>
 
     <!-- Bootstrap core CSS -->
 		<!-- <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"> -->
@@ -30,142 +30,144 @@
 		<div class="navbar-header">nav</div>
 	</nav>
 
-	<h1>grunt push release 11</h1>
+	<h1>Jack Daniels Running Calculator</h1>
 
 <form class="form-inline" role="form">
 
     <div class="row">
 
     	<div class="col-sm-8">
-    		<div class="row">
+    		<div class="well">
+    			<div class="row">
 
-				<div class="form-group col-sm-6">
+    							<div class="form-group col-sm-6">
 
-				  <label for="">Distance</label>
+    							  <label for="">Distance</label>
 
-				  <div class="input-group">
-				    <div class="input-group-btn">
-				      <button type="button" class="btn btn-cancel dropdown-toggle" data-toggle="dropdown">Distance <span class="caret"></span></button>
-				      <ul id="distanceHelper" class="dropdown-menu pull-left" role="menu">
-				        <li><a href="#" data-unit="42000">marathon</a></li>
-				        <li><a href="#" data-unit="21000">half marathon</a></li>
-				        <li><a href="#" data-unit="10000">10K</a></li>
-				        <li class="divider"></li>
-				        <li><a href="#">Separated link</a></li>
-				      </ul>
-				    </div><!-- /btn-group -->
+    							  <div class="input-group">
+    							    <div class="input-group-btn">
+    							      <button type="button" class="btn btn-cancel dropdown-toggle" data-toggle="dropdown">Races <span class="caret"></span></button>
+    							      <ul id="distanceHelper" class="dropdown-menu pull-left" role="menu">
+    							        <li><a href="#" data-unit="42000">marathon</a></li>
+    							        <li><a href="#" data-unit="21000">half marathon</a></li>
+    							        <li><a href="#" data-unit="10000">10K</a></li>
+    							        <li class="divider"></li>
+    							        <li><a href="#">Separated link</a></li>
+    							      </ul>
+    							    </div><!-- /btn-group -->
 
-				    <input type="text" id="distance-unit" class="form-control">
+    							    <input type="text" id="distance-unit" class="form-control">
 
-				    <div class="input-group-btn">
-				      <button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
-				      <ul class="dropdown-menu pull-right unit-select" role="menu">
-				        <li><a href="#" data-unit="mi">Mi</a></li>
-				        <li><a href="#" data-unit="km">Km</a></li>
-				        <li><a href="#" data-unit="m">m</a></li>
-				      </ul>
-				      <input type="hidden" id="distanceUnit" class="hiddenUnit">
-				    </div><!-- /btn-group -->
+    							    <div class="input-group-btn">
+    							      <button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
+    							      <ul class="dropdown-menu pull-right unit-select" role="menu">
+    							        <li><a href="#" data-unit="mi">Mi</a></li>
+    							        <li><a href="#" data-unit="km">Km</a></li>
+    							        <li><a href="#" data-unit="m">m</a></li>
+    							      </ul>
+    							      <input type="hidden" id="distanceUnit" class="hiddenUnit">
+    							    </div><!-- /btn-group -->
 
-				  </div><!-- /input-group -->
+    							  </div><!-- /input-group -->
 
-				</div>
+    							</div>
 
-				<div class="form-group col-sm-3">
-					<label for="">Time</label>
-							<input type="text" class="form-control" data-mask="99:99:99">
-				</div>
+    							<div class="form-group col-sm-3">
+    								<label for="">Time</label>
+    										<input type="text" class="form-control" data-mask="99:99:99">
+    							</div>
 
-	        	<div class="form-group col-sm-3">
+    				        	<div class="form-group col-sm-3">
 
-	        		<label for="">Pace</label>
+    				        		<label for="">Pace</label>
 
-	            	<div class="input-group">
+    				            	<div class="input-group">
 
-						<input type="text" class="form-control" data-mask="99:99">
+    									<input type="text" class="form-control" data-mask="99:99">
 
-						<div class="input-group-btn">
-							<button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
-							<ul class="dropdown-menu pull-right unit-select" role="menu">
-							  <li><a href="#" data-unit="mi">Mi</a></li>
-							  <li><a href="#" data-unit="km">Km</a></li>
-							  <li><a href="#" data-unit="m">m</a></li>
-							</ul>
-							<input type="hidden" id="paceUnit" class="hiddenUnit">
-						</div><!-- /btn-group -->
+    									<div class="input-group-btn">
+    										<button type="button" class="btn btn-unit dropdown-toggle" data-toggle="dropdown">Unit<span class="caret"></span></button>
+    										<ul class="dropdown-menu pull-right unit-select" role="menu">
+    										  <li><a href="#" data-unit="mi">Mi</a></li>
+    										  <li><a href="#" data-unit="km">Km</a></li>
+    										  <li><a href="#" data-unit="m">m</a></li>
+    										</ul>
+    										<input type="hidden" id="paceUnit" class="hiddenUnit">
+    									</div><!-- /btn-group -->
 
-	            	</div><!-- /input-group -->
+    				            	</div><!-- /input-group -->
 
-				</div>
+    							</div>
 
-			</div>
+    						</div>
 
-		    <div id="advanced" class="row collapse in">
-		    	<div class="col-sm-8">
-		    		<div class="well">
-						<div class="row">
-							<div class="checkbox">
-							  <label>
-							    <input type="checkbox" value="option1" checked>
-							    Predictive
-							  </label>
-							  <span class="glyphicon glyphicon-question-sign"></span>
-							</div>
-						</div>
+    						<div class="row calc-row">
+    					    	<div class="col-sm-7">
+    					    		<div class="well collapse in" id="advanced">
+    									<div class="row">
+    										<div class="checkbox">
+    										  <label>
+    										    <input type="checkbox" value="option1" checked>
+    										    Predictive
+    										  </label>
+    										  <span class="glyphicon glyphicon-question-sign"></span>
+    										</div>
+    									</div>
 
-						<div class="row">
+    									<div class="row">
 
-							<ul id="myTab" class="nav nav-tabs nav-justified">
-								<li class="active"><a href="#wind" data-toggle="tab">Wind</a></li>
-								<li class=""><a href="#temp" data-toggle="tab">Temperature</a></li>
-								<li class=""><a href="#alt" data-toggle="tab">Altitude</a></li>
-							</ul>
-							<div id="myTabContent" class="tab-content">
-								<div class="tab-pane fade active in" id="wind">
-									<input type="text">
-									<select name="" id="">
-										<option value="">mph</option>
-										<option value="">km/h</option>
-									</select>
-									<div class="checkbox-inline">
-									  <label>
-									    <input type="checkbox" value="option1">
-									    Tail Wind
-									  </label>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="temp">
-									<input type="text">
-									<select name="" id="">
-										<option value="">F</option>
-										<option value="">C</option>
-									</select>
-								</div>
-								<div class="tab-pane fade" id="alt">
-									<input type="text">
-									<select name="" id="">
-										<option value="">ft</option>
-										<option value="">m</option>
-									</select>
-								</div>
-							</div>
+    										<ul id="myTab" class="nav nav-tabs nav-justified">
+    											<li class="active"><a href="#wind" data-toggle="tab">Wind</a></li>
+    											<li class=""><a href="#temp" data-toggle="tab">Temperature</a></li>
+    											<li class=""><a href="#alt" data-toggle="tab">Altitude</a></li>
+    										</ul>
+    										<div id="myTabContent" class="tab-content">
+    											<div class="tab-pane fade active in" id="wind">
+    												<input type="text">
+    												<select name="" id="">
+    													<option value="">mph</option>
+    													<option value="">km/h</option>
+    												</select>
+    												<div class="checkbox-inline">
+    												  <label>
+    												    <input type="checkbox" value="option1">
+    												    Tail Wind
+    												  </label>
+    												</div>
+    											</div>
+    											<div class="tab-pane fade" id="temp">
+    												<input type="text">
+    												<select name="" id="">
+    													<option value="">F</option>
+    													<option value="">C</option>
+    												</select>
+    											</div>
+    											<div class="tab-pane fade" id="alt">
+    												<input type="text">
+    												<select name="" id="">
+    													<option value="">ft</option>
+    													<option value="">m</option>
+    												</select>
+    											</div>
+    										</div>
 
-						</div>
+    									</div>
 
-		    		</div>
-		    	</div>
-		    </div>
+    					    		</div>
 
-			<div class="row">
-				<div class="col-sm-6 text-right">
-				</div>
-				<div class="col-sm-6 text-center">
-					<button class="btn btn-link" data-toggle="collapse" data-target="#advanced">
-						<span class="glyphicon glyphicon-chevron-down"></span> Advanced
-					</button>
-					<button class="btn btn-primary">Calculate</button>
-				</div>
-			</div>
+    					   			<button class="btn btn-link" data-toggle="collapse" data-target="#advanced">
+    									<span class="glyphicon glyphicon-chevron-down"></span> Advanced
+    								</button>
+
+    					    	</div>
+    							<div class="col-sm-5 text-center">
+    								<button class="btn btn-primary">Calculate</button>
+    								<button class="btn btn-link" id="total-reset">
+    									<span class="glyphicon glyphicon-refresh"></span> Reset
+    								</button>
+    							</div>
+    						</div>
+    		</div>
 
 			<hr>
 
